@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!--  <meta charset="UTF-8" />  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- <script defer src="./scripts/revision.js"></script> -->
+    <script src="./scripts/dom.js" defer></script>
+    <script src="./scripts/navbar.js" defer></script>
+    <title>Introduction SASS</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <svg id="menu-button" width="40" height="40" viewBox="0 0 512 512" fill="#5371C0">
+          <rect x="23" y="220" width="463" height="73" rx="18" />
+          <rect x="23" y="347" width="463" height="73" rx="18" />
+          <rect x="23" y="93" width="463" height="73" rx="18" />
+        </svg>
+
+        <p>LOGO</p>
+      </div>
+      <ul id="menu" class="menu-closed">
+        <li>
+          <a href="/index.html">Acceuil</a>
+        </li>
+        <li>
+          <a href="/personnages.html">Personnages</a>
+        </li>
+        <li>
+          <a href="/contact.html">Contactez nous!</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Un titre!</h1>
+      <img class="Hero" src="./medias/logo_html.png" alt="Logo de HTML" />
+      <video src="./medias/Minature.mp4" autoplay controls>
+        <p>Mettre ajour le navigateur!</p>
+      </video>
+      <a href="https://google.com" target="blank">Lien vers Google</a>
+      <input type="text" placeholder="Entrez une phrase" id="phraseInput" />
+    </header>
+
+    <main>
+      <section>
+        <h2>Les listes:</h2>
+
+        <article>
+          <h3>Les liste ordonnées</h3>
+          <!--Ordered List-->
+          <ol>
+            <!--List Item-->
+            <li>Pizza</li>
+            <li>Coca-cola</li>
+          </ol>
+        </article>
+
+        <article>
+          <h3>Les liste non ordonnées</h3>
+          <!--Unordered List-->
+          <ul>
+            <!--List Item-->
+            <li>Pizza</li>
+            <li>Coca-cola</li>
+          </ul>
+        </article>
+      </section>
+
+      <section>
+        <h2>Les formulaires</h2>
+        <form>
+          <input type="text" placeholder="Entrez une phrase" />
+          <textarea>Entrez un paragraphe</textarea>
+          <input type="password" placeholder="Mot de passe" />
+          <input type="color" />
+          <input type="file" />
+          <input type="submit" />
+        </form>
+      </section>
+
+      <section id="table">
+        <h3>La table de multiplication</h3>
+        <input placeholder="Entrez une nombre" type="number" id="numberInput" />
+        <button id="tableButton">Calculer</button>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
