@@ -1,42 +1,36 @@
-#menu-button {
-  display: none;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(200, 53, 40);
-  color: whitesmoke;
+  background-color: rgb(85, 46, 192);
+  color: rgb(203, 203, 203);
   position: sticky;
 }
-
-nav > div {
+nav div {
   display: flex;
 }
-
-#menu {
-  display: flex;
-  transition: all 1s cubic-bezier(0.84, -1.38, 0.16, 2.03);
-}
-
-#menu > li {
-  list-style: none;
-  padding: 0 20px;
-}
-
-#menu a {
-  color: whitesmoke;
-}
-
 nav p {
   font-size: 20px;
   padding: 0 10px;
+}
+nav #menu-button {
+  display: none;
+}
+nav #menu {
+  display: flex;
+  transition: all 1s cubic-bezier(0.84, -1.38, 0.16, 2.03);
+}
+nav #menu li {
+  list-style: none;
+  padding: 0 20px;
+}
+nav #menu a {
+  color: rgb(203, 203, 203);
 }
 
 @media screen and (max-width: 600px) {
   #menu-button {
     display: block;
-    fill: whitesmoke;
+    fill: rgb(203, 203, 203);
     padding: 5px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -49,7 +43,7 @@ nav p {
     position: absolute;
     flex-direction: column;
     top: 60px;
-    background-color: royalblue;
+    background-color: rgb(85, 46, 192);
     min-width: 50%;
     min-height: 50vh;
     padding: 10px;

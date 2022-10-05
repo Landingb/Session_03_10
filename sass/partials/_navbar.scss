@@ -1,42 +1,50 @@
-#menu-button{
-    display: none;
-}
 
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(200, 53, 40);
-    color: whitesmoke;
+    background-color: $primary-color;
+    color: $navbar-text-color;
     position: sticky;
-}
-nav > div{
-    display: flex;
-}
 
-#menu{
-    display: flex;
-    transition: all 1s cubic-bezier(.84,-1.38,.16,2.03);
-}
+    div{
+        display: flex;
+    }
 
-#menu > li{
-    list-style: none;
-    padding: 0 20px;
+    p{
+        font-size:20px;
+        padding: 0 10px;
+    }
+
+    #menu-button{
+        display: none;
+    }
     
+
+    #menu{
+        display: flex;
+        transition: all 1s cubic-bezier(.84,-1.38,.16,2.03);
+    
+        li{
+            list-style: none;
+            padding: 0 20px;
+        }
+        a{
+            color: $navbar-text-color;
+        }
+    }
 }
 
-#menu a{
-    color: whitesmoke;
-}
+//Le nesting
 
-nav p{
-    font-size:20px;
-    padding: 0 10px;
-}
+
+
+
+//Utiliser le nesting pour mettre (nav p) et (nav > div) dans nav directement 
 
 @media screen and (max-width:600px) {
     #menu-button{
         display: block;
-        fill: whitesmoke;
+        fill: $navbar-text-color;
         padding: 5px;
         transition: all 0.3s ease-in-out;
         cursor: pointer;
@@ -51,7 +59,7 @@ nav p{
         position: absolute;
         flex-direction: column;
         top:60px;
-        background-color: royalblue;
+        background-color: $primary-color;
         min-width: 50%;
         min-height: 50vh;
         padding: 10px;
