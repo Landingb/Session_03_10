@@ -1,3 +1,7 @@
 # Session_03_10
 
-Cours autour Javascript, HTML et CSS
+## Pour surveiller le ficher sass
+
+```bash
+sass --watch ./sass/style.scss ./style.css
+```
