@@ -1,84 +1,81 @@
-
-h1{
-    color:green;
-    font-size: 50px;
+#menu-button {
+  display: none;
 }
 
-img, video{
-    width: 100%;
-    max-width: 600px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(200, 53, 40);
+  color: whitesmoke;
+  position: sticky;
 }
 
-form{
-    display: flex;
+nav > div {
+  display: flex;
+}
+
+#menu {
+  display: flex;
+  transition: all 1s cubic-bezier(0.84, -1.38, 0.16, 2.03);
+}
+
+#menu > li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+#menu a {
+  color: whitesmoke;
+}
+
+nav p {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  #menu-button {
+    display: block;
+    fill: whitesmoke;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  #menu-button:hover {
+    fill: rgb(31, 191, 249);
+    transform: scale(1.2);
+  }
+  #menu {
+    position: absolute;
     flex-direction: column;
+    top: 60px;
+    background-color: royalblue;
+    min-width: 50%;
+    min-height: 50vh;
     padding: 10px;
-    max-width: 600px;
+  }
+  .menu-opened {
+    left: 2px;
+  }
+  .menu-closed {
+    left: -100%;
+  }
+}
+h1 {
+  color: green;
+  font-size: 50px;
 }
 
-#menu-button{
-    display: none;
+img, video {
+  width: 100%;
+  max-width: 600px;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(200, 53, 40);
-    color: whitesmoke;
-    position: sticky;
-}
-nav > div{
-    display: flex;
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 600px;
 }
 
-#menu{
-    display: flex;
-    transition: all 1s cubic-bezier(.84,-1.38,.16,2.03);
-}
-
-#menu > li{
-    list-style: none;
-    padding: 0 20px;
-    
-}
-
-#menu a{
-    color: whitesmoke;
-}
-
-nav p{
-    font-size:20px;
-    padding: 0 10px;
-}
-
-@media screen and (max-width:600px) {
-    #menu-button{
-        display: block;
-        fill: whitesmoke;
-        padding: 5px;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-    }
-
-    #menu-button:hover{
-        fill: rgb(31, 191, 249);
-        transform: scale(1.2);
-    }
-
-    #menu{
-        position: absolute;
-        flex-direction: column;
-        top:60px;
-        background-color: royalblue;
-        min-width: 50%;
-        min-height: 50vh;
-        padding: 10px;
-    }
-
-   .menu-opened{
-        left:2px;
-    }
-    .menu-closed{
-        left:-100%;
-    }
-}
+/*# sourceMappingURL=style.css.map */
