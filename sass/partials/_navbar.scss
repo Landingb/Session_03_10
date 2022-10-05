@@ -1,4 +1,6 @@
-
+#menu-button{
+    display: none;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -15,10 +17,7 @@ nav{
         padding: 0 10px;
     }
 
-    #menu-button{
-        display: none;
-    }
-    
+   
 
     #menu{
         display: flex;
